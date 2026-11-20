@@ -1,0 +1,341 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#070a10"/>
+    </linearGradient>
+
+    <linearGradient id="planner-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#4338ca"/>
+    </linearGradient>
+    <linearGradient id="planner-card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <linearGradient id="researcher-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+    <linearGradient id="researcher-card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#083344" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <linearGradient id="critic-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="critic-card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#451a03" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <linearGradient id="writer-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="writer-card" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <linearGradient id="hitl-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#be185d"/>
+    </linearGradient>
+
+    <!-- Filters for Glow & Shadows -->
+    <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+
+    <filter id="glow-planner" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="glow-researcher" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="glow-critic" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="glow-writer" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!-- Arrow Markers -->
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#06b6d4"/>
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrow-emerald" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#10b981"/>
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#818cf8"/>
+    </marker>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1280" height="720" rx="20" fill="url(#bg-grad)" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- Subtle Grid Pattern -->
+  <g opacity="0.07" stroke="#94a3b8" stroke-width="1">
+    <line x1="0" y1="90" x2="1280" y2="90" />
+    <line x1="0" y1="180" x2="1280" y2="180" />
+    <line x1="0" y1="270" x2="1280" y2="270" />
+    <line x1="0" y1="360" x2="1280" y2="360" />
+    <line x1="0" y1="450" x2="1280" y2="450" />
+    <line x1="0" y1="540" x2="1280" y2="540" />
+    <line x1="0" y1="630" x2="1280" y2="630" />
+    <line x1="160" y1="0" x2="160" y2="720" />
+    <line x1="320" y1="0" x2="320" y2="720" />
+    <line x1="480" y1="0" x2="480" y2="720" />
+    <line x1="640" y1="0" x2="640" y2="720" />
+    <line x1="800" y1="0" x2="800" y2="720" />
+    <line x1="960" y1="0" x2="960" y2="720" />
+    <line x1="1120" y1="0" x2="1120" y2="720" />
+  </g>
+
+  <!-- Header Section -->
+  <g id="header">
+    <rect x="470" y="24" width="340" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <circle cx="488" cy="38" r="4" fill="#10b981"/>
+    <text x="502" y="43" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#94a3b8" letter-spacing="1.5">LANGGRAPH AUTONOMOUS ENGINE</text>
+
+    <text x="640" y="85" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800" fill="#f8fafc" letter-spacing="-0.5">The 4 Specialized Agents Architecture</text>
+    <text x="640" y="112" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="400" fill="#94a3b8">Multi-Agent Research Pipeline with Fact-Checking Feedback Loop &amp; Human-in-the-Loop Approval</text>
+  </g>
+
+  <!-- ==================== AGENT 1: PLANNER ==================== -->
+  <g id="agent-planner" transform="translate(45, 160)">
+    <rect width="260" height="370" rx="16" fill="url(#planner-card)" stroke="#6366f1" stroke-width="1.8" filter="url(#card-shadow)"/>
+    
+    <!-- Header Badge -->
+    <rect x="20" y="20" width="46" height="46" rx="12" fill="url(#planner-grad)"/>
+    <text x="43" y="50" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" fill="#ffffff">🎯</text>
+
+    <rect x="76" y="22" width="70" height="20" rx="6" fill="#312e81"/>
+    <text x="82" y="36" font-family="monospace" font-size="11" font-weight="600" fill="#c7d2fe">AGENT 1</text>
+    
+    <text x="76" y="60" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="19" font-weight="700" fill="#ffffff">Planner</text>
+
+    <line x1="20" y1="82" x2="240" y2="82" stroke="#3730a3" stroke-width="1"/>
+
+    <!-- Capability Tags -->
+    <rect x="20" y="95" width="135" height="22" rx="6" fill="#1e1b4b" stroke="#4338ca" stroke-width="1"/>
+    <text x="28" y="110" font-family="monospace" font-size="11" fill="#a5b4fc">Gemini 3.5 Flash</text>
+
+    <text x="20" y="145" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" fill="#c7d2fe">Core Responsibilities:</text>
+
+    <!-- Bullet Points -->
+    <g font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#cbd5e1">
+      <circle cx="26" cy="172" r="3" fill="#818cf8"/>
+      <text x="36" y="176">Decomposes vague topic</text>
+      <text x="36" y="192" fill="#94a3b8">into 3–5 targeted questions</text>
+
+      <circle cx="26" cy="220" r="3" fill="#818cf8"/>
+      <text x="36" y="224">Synthesizes JSON Schema</text>
+      <text x="36" y="240" fill="#94a3b8">with strict query bounds</text>
+
+      <circle cx="26" cy="268" r="3" fill="#818cf8"/>
+      <text x="36" y="272">Zero-Hallucination Framing</text>
+      <text x="36" y="288" fill="#94a3b8">optimizes Tavily relevance</text>
+    </g>
+
+    <!-- State Output -->
+    <rect x="18" y="315" width="224" height="38" rx="8" fill="#0f172a" stroke="#312e81" stroke-width="1"/>
+    <text x="28" y="331" font-family="monospace" font-size="10" fill="#818cf8">STATE UPDATE:</text>
+    <text x="28" y="344" font-family="monospace" font-size="11" fill="#f8fafc">state["sub_questions"]</text>
+  </g>
+
+  <!-- Flow Arrow: Planner -> Researcher -->
+  <path d="M 305 345 L 345 345" stroke="#818cf8" stroke-width="2.5" marker-end="url(#arrow-purple)"/>
+
+  <!-- ==================== AGENT 2: RESEARCHER ==================== -->
+  <g id="agent-researcher" transform="translate(355, 160)">
+    <rect width="260" height="370" rx="16" fill="url(#researcher-card)" stroke="#06b6d4" stroke-width="1.8" filter="url(#card-shadow)"/>
+    
+    <!-- Header Badge -->
+    <rect x="20" y="20" width="46" height="46" rx="12" fill="url(#researcher-grad)"/>
+    <text x="43" y="50" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" fill="#ffffff">🔍</text>
+
+    <rect x="76" y="22" width="70" height="20" rx="6" fill="#155e75"/>
+    <text x="82" y="36" font-family="monospace" font-size="11" font-weight="600" fill="#a5f3fc">AGENT 2</text>
+    
+    <text x="76" y="60" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="19" font-weight="700" fill="#ffffff">Researcher</text>
+
+    <line x1="20" y1="82" x2="240" y2="82" stroke="#0e7490" stroke-width="1"/>
+
+    <!-- Capability Tags -->
+    <rect x="20" y="95" width="135" height="22" rx="6" fill="#083344" stroke="#0891b2" stroke-width="1"/>
+    <text x="28" y="110" font-family="monospace" font-size="11" fill="#67e8f9">Tavily Search API</text>
+
+    <text x="20" y="145" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" fill="#a5f3fc">Core Responsibilities:</text>
+
+    <!-- Bullet Points -->
+    <g font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#cbd5e1">
+      <circle cx="26" cy="172" r="3" fill="#22d3ee"/>
+      <text x="36" y="176">Parallel Web Retrieval</text>
+      <text x="36" y="192" fill="#94a3b8">staggered query workers</text>
+
+      <circle cx="26" cy="220" r="3" fill="#22d3ee"/>
+      <text x="36" y="224">Structured Bullet Summary</text>
+      <text x="36" y="240" fill="#94a3b8">per sub-question findings</text>
+
+      <circle cx="26" cy="268" r="3" fill="#22d3ee"/>
+      <text x="36" y="272">Preserves Source URLs</text>
+      <text x="36" y="288" fill="#94a3b8">binds exact quote snippets</text>
+    </g>
+
+    <!-- State Output -->
+    <rect x="18" y="315" width="224" height="38" rx="8" fill="#0f172a" stroke="#155e75" stroke-width="1"/>
+    <text x="28" y="331" font-family="monospace" font-size="10" fill="#22d3ee">STATE UPDATE:</text>
+    <text x="28" y="344" font-family="monospace" font-size="11" fill="#f8fafc">state["findings"]</text>
+  </g>
+
+  <!-- Flow Arrow: Researcher -> Critic -->
+  <path d="M 615 345 L 655 345" stroke="#06b6d4" stroke-width="2.5" marker-end="url(#arrow-cyan)"/>
+
+  <!-- ==================== AGENT 3: CRITIC ==================== -->
+  <g id="agent-critic" transform="translate(665, 160)">
+    <rect width="260" height="370" rx="16" fill="url(#critic-card)" stroke="#f59e0b" stroke-width="1.8" filter="url(#card-shadow)"/>
+    
+    <!-- Header Badge -->
+    <rect x="20" y="20" width="46" height="46" rx="12" fill="url(#critic-grad)"/>
+    <text x="43" y="50" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" fill="#ffffff">⚖️</text>
+
+    <rect x="76" y="22" width="70" height="20" rx="6" fill="#78350f"/>
+    <text x="82" y="36" font-family="monospace" font-size="11" font-weight="600" fill="#fde68a">AGENT 3</text>
+    
+    <text x="76" y="60" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="19" font-weight="700" fill="#ffffff">Critic</text>
+
+    <line x1="20" y1="82" x2="240" y2="82" stroke="#b45309" stroke-width="1"/>
+
+    <!-- Capability Tags -->
+    <rect x="20" y="95" width="135" height="22" rx="6" fill="#451a03" stroke="#d97706" stroke-width="1"/>
+    <text x="28" y="110" font-family="monospace" font-size="11" fill="#fcd34d">Grounding Auditor</text>
+
+    <text x="20" y="145" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" fill="#fde68a">Core Responsibilities:</text>
+
+    <!-- Bullet Points -->
+    <g font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#cbd5e1">
+      <circle cx="26" cy="172" r="3" fill="#fbbf24"/>
+      <text x="36" y="176">Claim-by-Claim Audit</text>
+      <text x="36" y="192" fill="#94a3b8">checks source alignment</text>
+
+      <circle cx="26" cy="220" r="3" fill="#fbbf24"/>
+      <text x="36" y="224">Pass / Fail Verification</text>
+      <text x="36" y="240" fill="#94a3b8">with actionable feedback</text>
+
+      <circle cx="26" cy="268" r="3" fill="#fbbf24"/>
+      <text x="36" y="272">Conditional Feedback Loop</text>
+      <text x="36" y="288" fill="#94a3b8">max 2 automated retries</text>
+    </g>
+
+    <!-- State Output -->
+    <rect x="18" y="315" width="224" height="38" rx="8" fill="#0f172a" stroke="#78350f" stroke-width="1"/>
+    <text x="28" y="331" font-family="monospace" font-size="10" fill="#fbbf24">STATE UPDATE:</text>
+    <text x="28" y="344" font-family="monospace" font-size="11" fill="#f8fafc">critic_feedback, retry_cnt</text>
+  </g>
+
+  <!-- ==================== CONDITIONAL FEEDBACK LOOP (Critic -> Researcher) ==================== -->
+  <path d="M 795 160 C 795 105, 485 105, 485 152" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow-amber)"/>
+  
+  <rect x="555" y="112" width="170" height="24" rx="12" fill="#2d1706" stroke="#d97706" stroke-width="1"/>
+  <text x="640" y="128" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" font-weight="700" fill="#fde68a">↺ Retry Loop (if Fail &lt; 2)</text>
+
+  <!-- Flow Arrow: Critic -> HITL / Writer -->
+  <path d="M 925 345 L 970 345" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#arrow-amber)"/>
+
+  <!-- ==================== AGENT 4: WRITER ==================== -->
+  <g id="agent-writer" transform="translate(975, 160)">
+    <rect width="260" height="370" rx="16" fill="url(#writer-card)" stroke="#10b981" stroke-width="1.8" filter="url(#card-shadow)"/>
+    
+    <!-- Header Badge -->
+    <rect x="20" y="20" width="46" height="46" rx="12" fill="url(#writer-grad)"/>
+    <text x="43" y="50" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="22" fill="#ffffff">✍️</text>
+
+    <rect x="76" y="22" width="70" height="20" rx="6" fill="#065f46"/>
+    <text x="82" y="36" font-family="monospace" font-size="11" font-weight="600" fill="#a7f3d0">AGENT 4</text>
+    
+    <text x="76" y="60" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="19" font-weight="700" fill="#ffffff">Writer</text>
+
+    <line x1="20" y1="82" x2="240" y2="82" stroke="#047857" stroke-width="1"/>
+
+    <!-- Capability Tags -->
+    <rect x="20" y="95" width="135" height="22" rx="6" fill="#064e3b" stroke="#059669" stroke-width="1"/>
+    <text x="28" y="110" font-family="monospace" font-size="11" fill="#6ee7b7">PhD Whitepaper</text>
+
+    <text x="20" y="145" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="600" fill="#a7f3d0">Core Responsibilities:</text>
+
+    <!-- Bullet Points -->
+    <g font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#cbd5e1">
+      <circle cx="26" cy="172" r="3" fill="#34d399"/>
+      <text x="36" y="176">Academic Abstract</text>
+      <text x="36" y="192" fill="#94a3b8">&amp; Taxonomy Comparison</text>
+
+      <circle cx="26" cy="220" r="3" fill="#34d399"/>
+      <text x="36" y="224">Rigorous Citations [1]</text>
+      <text x="36" y="240" fill="#94a3b8">strict numerical binding</text>
+
+      <circle cx="26" cy="268" r="3" fill="#34d399"/>
+      <text x="36" y="272">Point-wise References</text>
+      <text x="36" y="288" fill="#94a3b8">clickable link bibliography</text>
+    </g>
+
+    <!-- State Output -->
+    <rect x="18" y="315" width="224" height="38" rx="8" fill="#0f172a" stroke="#065f46" stroke-width="1"/>
+    <text x="28" y="331" font-family="monospace" font-size="10" fill="#34d399">FINAL DELIVERABLE:</text>
+    <text x="28" y="344" font-family="monospace" font-size="11" fill="#f8fafc">state["report"] (.md)</text>
+  </g>
+
+  <!-- ==================== HUMAN-IN-THE-LOOP APPROVAL BADGE ==================== -->
+  <g transform="translate(930, 290)">
+    <circle cx="18" cy="18" r="18" fill="url(#hitl-grad)" filter="url(#card-shadow)"/>
+    <text x="18" y="24" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" fill="#ffffff">🛡️</text>
+    <rect x="-65" y="44" width="166" height="26" rx="6" fill="#200d17" stroke="#ec4899" stroke-width="1.2"/>
+    <text x="18" y="61" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5" font-weight="700" fill="#fbcfe8">HUMAN APPROVAL GATE</text>
+  </g>
+
+  <!-- ==================== FOOTER: SHARED ORCHESTRATION LAYER ==================== -->
+  <g id="footer-layer" transform="translate(45, 560)">
+    <rect width="1190" height="120" rx="14" fill="#0c1222" stroke="#1e293b" stroke-width="1.5"/>
+
+    <rect x="25" y="20" width="170" height="24" rx="6" fill="#1e293b"/>
+    <text x="35" y="36" font-family="monospace" font-size="11" font-weight="700" fill="#38bdf8">LANGGRAPH WORKFLOW</text>
+
+    <!-- State flow features -->
+    <g transform="translate(25, 60)" font-family="-apple-system, BlinkMacSystemFont, sans-serif">
+      <rect x="0" y="0" width="270" height="42" rx="8" fill="#131d33" stroke="#334155" stroke-width="1"/>
+      <text x="15" y="18" font-size="12" font-weight="700" fill="#f8fafc">TypedDict Shared State</text>
+      <text x="15" y="34" font-size="10.5" fill="#94a3b8">topic, questions, findings, retry, report</text>
+    </g>
+
+    <g transform="translate(320, 60)" font-family="-apple-system, BlinkMacSystemFont, sans-serif">
+      <rect x="0" y="0" width="270" height="42" rx="8" fill="#131d33" stroke="#334155" stroke-width="1"/>
+      <text x="15" y="18" font-size="12" font-weight="700" fill="#f8fafc">HITL Checkpointing</text>
+      <text x="15" y="34" font-size="10.5" fill="#94a3b8">MemorySaver &amp; interrupt_before=["writer"]</text>
+    </g>
+
+    <g transform="translate(615, 60)" font-family="-apple-system, BlinkMacSystemFont, sans-serif">
+      <rect x="0" y="0" width="270" height="42" rx="8" fill="#131d33" stroke="#334155" stroke-width="1"/>
+      <text x="15" y="18" font-size="12" font-weight="700" fill="#f8fafc">FastAPI Backend</text>
+      <text x="15" y="34" font-size="10.5" fill="#94a3b8">POST /research, POST /approve, GET /report</text>
+    </g>
+
+    <g transform="translate(910, 60)" font-family="-apple-system, BlinkMacSystemFont, sans-serif">
+      <rect x="0" y="0" width="255" height="42" rx="8" fill="#131d33" stroke="#334155" stroke-width="1"/>
+      <text x="15" y="18" font-size="12" font-weight="700" fill="#f8fafc">Langfuse Observability</text>
+      <text x="15" y="34" font-size="10.5" fill="#94a3b8">Full LLM call tracing, token audit &amp; latency</text>
+    </g>
+  </g>
+</svg>
