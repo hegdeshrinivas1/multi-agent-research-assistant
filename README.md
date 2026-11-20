@@ -29,7 +29,7 @@
 ## 🖥️ Live Application Preview
 
 <p align="center">
-  <img src="assets/app_demo.jpg" alt="AgentResearch Streamlit Dashboard" width="92%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.4);" />
+  <img src="assets/appdemo.png" alt="AgentResearch Streamlit Dashboard" width="92%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.4);" />
 </p>
 
 ---
